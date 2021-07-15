@@ -1,0 +1,151 @@
+INDIAN PINES
+
+\begin{table}[]
+\centering
+\scalebox{0.8}{}
+\caption{Overall classification accuracy ($\%$) for Indian Pines: Original image (OI), PCA, Fourier shape descriptors (FD) and Wavelet shape descriptors (WD).}
+\label{tab:tab1}
+\begin{tabular}{|ccccccc|}
+\hline
+\multicolumn{6}{|r}{\cellcolor[HTML]{EFEFEF}\textbf{OI (\%)}} & 76.12     \\ 
+\hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{$d$} & \textbf{PCA(\%)} & \textbf{FD(\%)} & \textbf{FC(\%)} & \textbf{BM(\%)}& \textbf{SM(\%)}& \textbf{SV(\%)}\\ 
+\hline
+5  & \textbf{77.13}   & 73.39           & 54.62          & 55.80          & 60.85           & 53.37  \\ 
+10 & \textbf{77.13}   & \textbf{83.05}  & 61.65          & 62.49          & 61.25           & 56.80  \\
+15 & 74.83            & 82.66           & 63.08          & 67.28          & 68.55           & 64.95  \\
+20 & 72.78            & 81.35           & 67.36          & 67.11          & 70.47           & 63.59  \\
+25 & 70.31            & 78.48           & 68.20          & 67.66          & \textbf{71.38}  & 62.26  \\
+30 & 66.56            & 75.12           & 70.53          & 67.41          & 70.98           & 65.91  \\
+35 & 63.13            & 73.63           & 70.27          & 67.38          & 70.50           & 64.66  \\
+40 & 59.98            & 72.25           & 69.35          & 68.06          & 70.28           & 71.26  \\
+45 & 58.08            & 72.15           & 69.57          & \textbf{68.59} & 71.01           & 71.38  \\
+50 & 55.73            & 69.07           & \textbf{70.72} & 68.35          & 70.24           & \textbf{75.53}  \\
+\hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{5}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{WD}} \\\cline{1-5} 
+\cellcolor[HTML]{EFEFEF}\textbf{$l$} & \cellcolor[HTML]{EFEFEF}\textbf{$d$} & \cellcolor[HTML]{EFEFEF}\textbf{COIF(\%)} & \cellcolor[HTML]{EFEFEF}\textbf{$d$} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}\textbf{DB(\%)}}\\\cline{1-5} 
+1  & 102  & 76.23          & 100 & \multicolumn{1}{c|}{77.31}          \\\cline{1-5} 
+2  & 53   & 78.65          & 50  & \multicolumn{1}{c|}{81.21}          \\\cline{1-5} 
+3  & 29   & \textbf{80.35} & 25  & \multicolumn{1}{c|}{\textbf{84.18}} \\\cline{1-5}} 
+\end{tabular}
+\end{table}
+
+
+FDPC_acc_5  accuracy is    0.54.62330623306233
+FDPC_acc_10  accuracy is   0.61.65853658536585
+FDPC_acc_15  accuracy is   0.63.08943089430894
+FDPC_acc_20  accuracy is   0.67.36043360433605
+FDPC_acc_25  accuracy is   0.68.2059620596206
+FDPC_acc_30  accuracy is   0.70.53658536585365
+FDPC_acc_35  accuracy is   0.70.27642276422764
+FDPC_acc_40  accuracy is   0.69.3550135501355
+FDPC_acc_45  accuracy is   0.69.57181571815718
+FDPC_acc_50  accuracy is   0.70.72086720867209
+simil_acc_5  accuracy is   0.55.80487804878049
+simil_acc_10  accuracy is  0.62.49322493224932
+simil_acc_15  accuracy is  0.67.28455284552846
+simil_acc_20  accuracy is  0.67.11111111111111
+simil_acc_25  accuracy is  0.67.66395663956639
+simil_acc_30  accuracy is  0.67.41463414634147
+simil_acc_35  accuracy is  0.67.38211382113821
+simil_acc_40  accuracy is  0.68.0650406504065
+simil_acc_45  accuracy is  0.68.59620596205962
+simil_acc_50  accuracy is  0.68.35772357723577
+svd_acc_5  accuracy is     0.60.85636856368564
+svd_acc_10  accuracy is    0.61.25745257452575
+svd_acc_15  accuracy is    0.68.55284552845529
+svd_acc_20  accuracy is    0.70.47154471544715
+svd_acc_25  accuracy is    0.71.38211382113822
+svd_acc_30  accuracy is    0.70.9810298102981
+svd_acc_35  accuracy is    0.70.50406504065041
+svd_acc_40  accuracy is    0.70.28726287262873
+svd_acc_45  accuracy is    0.71.01355013550136
+svd_acc_50  accuracy is    0.70.24390243902439
+bombs_acc_5  accuracy is   0.53.37669376693767
+bombs_acc_10  accuracy is  0.56.80216802168022
+bombs_acc_15  accuracy is  0.64.9539295392954
+bombs_acc_20  accuracy is  0.63.59891598915989
+bombs_acc_25  accuracy is  0.62.26558265582656
+bombs_acc_30  accuracy is  0.65.91869918699187
+bombs_acc_35  accuracy is  0.64.66124661246613
+bombs_acc_40  accuracy is  0.71.26287262872629
+bombs_acc_45  accuracy is  0.71.38211382113822
+bombs_acc_50  accuracy is  0.75.53387533875339
+
+
+Kennedy Space Center:
+
+\begin{table}[]
+\centering
+\scalebox{0.8}{}
+\caption{Overall classification accuracies ($\%$) for KSC: Original image (OI), PCA, Fourier shape descriptors (FD) and Wavelet shape descriptors (WD)}
+\label{tab:tab3}
+\begin{tabular}{|ccccccc|}
+\hline
+\multicolumn{6}{|r}{\cellcolor[HTML]{EFEFEF}\textbf{OI (\%)}} & 76.12 \\ 
+\hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{$d$} & \textbf{PCA(\%)} & \textbf{FD(\%)} & \textbf{CF(\%)} & \textbf{BM(\%)}& \textbf{SM(\%)}& \textbf{SV(\%)}\\ 
+\hline
+5  & 59.70            & 80.49          & 84.73           & 82.81         & 17.91 & 17.86   \\ 
+10 & 65.14            & \textbf{81.51} & 87.52           & 88.03         & 17.82 & 17.84   \\
+15 & 65.88            & 79.42          & 90.00           & 46.50         & 17.82 & 17.82   \\
+20 & 68.17            & 80.51          & 89.85           & \textbf{90.29}& 17.84 & 17.84   \\
+25 & 70.94            & 79.51          & 90.31           & 48.50         & 17.88 & 17.82   \\
+30 & 73.50            & 79.55          & 90.38           & 45.28         & 17.86 & 17.82   \\
+35 & \textbf{73.56}   & 78.59          & \textbf{90.46}  & 47.44         & 17.86 & 17.80   \\
+40 & 73.22            & 77.16          & 90.31           & 46.82         & 17.82 & 17.82   \\
+45 & 72.86            & 76.16          & 90.00           & 48.05         & 18.03 & 18.03   \\
+50 & 73.41            & 75.80          & 90.04           & 46.99         & 20.27 & 20.27   \\
+\hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{5}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{WD}} \\\cline{1-5} 
+\cellcolor[HTML]{EFEFEF}\textbf{$l$} & \cellcolor[HTML]{EFEFEF}\textbf{$d$} & \cellcolor[HTML]{EFEFEF}\textbf{COIF(\%)} & \cellcolor[HTML]{EFEFEF}\textbf{$d$} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}\textbf{DB(\%)}}\\\cline{1-5} 
+1  & 90  & 88.76            & 88   & \multicolumn{1}{c|}{88.64}          \\ \cline{1-5} 
+2  & 47  & \textbf{89.53}   & 44   & \multicolumn{1}{c|}{\textbf{89.49}} \\ \cline{1-5} 
+3  & 26  & 89.34            & 22   & \multicolumn{1}{c|}{89.28}          \\ \cline{1-5} 
+\end{tabular}
+\end{table}
+
+FDPC_acc_5  accuracy is    0.84.73347547974414
+FDPC_acc_10  accuracy is   0.87.52665245202559
+FDPC_acc_15  accuracy is   0.90.00
+FDPC_acc_20  accuracy is   0.89.85074626865671
+FDPC_acc_25  accuracy is   0.90.31982942430704
+FDPC_acc_30  accuracy is   0.90.38379530916845
+FDPC_acc_35  accuracy is   0.90.46908315565032
+FDPC_acc_40  accuracy is   0.90.31982942430704
+FDPC_acc_45  accuracy is   0.90.00
+FDPC_acc_50  accuracy is   0.90.04264392324094
+simil_acc_5  accuracy is   0.17.91044776119403
+simil_acc_10  accuracy is  0.17.825159914712155
+simil_acc_15  accuracy is  0.17.825159914712155
+simil_acc_20  accuracy is  0.17.846481876332623
+simil_acc_25  accuracy is  0.17.88912579957356
+simil_acc_30  accuracy is  0.17.867803837953092
+simil_acc_35  accuracy is  0.17.867803837953092
+simil_acc_40  accuracy is  0.17.825159914712155
+simil_acc_45  accuracy is  0.18.038379530916845
+simil_acc_50  accuracy is  0.20.277185501066097
+svd_acc_5  accuracy is     0.17.867803837953092
+svd_acc_10  accuracy is    0.17.846481876332623
+svd_acc_15  accuracy is    0.17.825159914712155
+svd_acc_20  accuracy is    0.17.846481876332623
+svd_acc_25  accuracy is    0.17.825159914712155
+svd_acc_30  accuracy is    0.17.825159914712155
+svd_acc_35  accuracy is    0.17.803837953091683
+svd_acc_40  accuracy is    0.17.825159914712155
+svd_acc_45  accuracy is    0.18.038379530916845
+svd_acc_50  accuracy is    0.20.277185501066097
+bombs_acc_5  accuracy is   0.82.81449893390191
+bombs_acc_10  accuracy is  0.88.03837953091684
+bombs_acc_15  accuracy is  0.46.50319829424307
+bombs_acc_20  accuracy is  0.90.29850746268657
+bombs_acc_25  accuracy is  0.48.507462686567165
+bombs_acc_30  accuracy is  0.45.28784648187633
+bombs_acc_35  accuracy is  0.47.44136460554371
+bombs_acc_40  accuracy is  0.46.82302771855011
+bombs_acc_45  accuracy is  0.48.059701492537316
+bombs_acc_50  accuracy is  0.46.993603411513857

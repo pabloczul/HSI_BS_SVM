@@ -1,0 +1,167 @@
+
+
+
+\subsubsection{Cuprite}
+AVIRIS image collected over the mining district at Nevada in 1995. In this work, we used the spectral bands between 400-1300 nm and 2009-2507 nm due to these bands allow mineral identification. The final image has 138 bands and 400x400 pixels. We select the most common classes (i.e classes with the most labeled samples) from the available classification map \cite{clark1996evolution}. Thus, the classification map used in this work has 10 classes that includes Alunite, Kaolinite, Calcite, Muscovite and Chalcedony. A spectral band and classification map are shown in Fig. \ref{fig:figCup}. Details about classes and number of samples are presented in Table \ref{tab:tabCup}. 
+
+\begin{figure}
+\centering
+\includegraphics[scale=1]{figCuprite.eps}
+\caption{Cuprite AVIRIS image: a. Spectral band 52, b. Ground truth \cite{clark1996evolution}.}
+\label{fig:figCup}
+\end{figure}
+
+
+\begin{table}[]
+\centering
+\caption{Labels, testing and training samples for Cuprite.}
+\label{tab:tabCup}
+\begin{tabular}{clcc}
+\hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Label} & \multicolumn{1}{c}{\cellcolor[HTML]{EFEFEF}\textbf{Class}} & \textbf{\begin{tabular}[c]{@{}c@{}}Training\\ Samples\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Testing\\ Samples\end{tabular}} \\ \hline
+\textbf{A}     & \textit{K-Alunite 250 c}                                   & 351                                                                 & 3162                                                               \\
+\textbf{B}    & \textit{Alunite+Kao or mus}                                & 1424                                                                & 12812                                                              \\
+\textbf{C}     & \textit{Kaolinite wxl}                                     & 271                                                                 & 2435                                                               \\
+\textbf{D}     & \textit{Kaolinite pxl}                                     & 886                                                                 & 7970                                                               \\
+\textbf{E}     & \textit{Kaolinite + Smec or mus}                           & 168                                                                 & 1509                                                               \\
+\textbf{F}     & \textit{Calcite}                                           & 91                                                                  & 822                                                                \\
+\textbf{G}     & \textit{Calcite + montmorillonite}                         & 828                                                                 & 7448                                                               \\
+\textbf{H}     & \textit{Med-al Muscovite}                                  & 570                                                                 & 5132                                                               \\
+\textbf{I}     & \textit{High-al Muscovite}                                 & 2256                                                                & 20304                                                              \\
+\textbf{J}     & \textit{Chalcedony}                                        & 355                                                                 & 3197                                                               \\ \hline
+\end{tabular}
+\end{table}
+
+In the case of Cuprite, the original image was classified with a $89.31 \%$ of accuracy (Table \ref{tab:tab2}). The best results using PCA and FD were $87.83\%$ and $86.73\%$ respectively, for both 10 and 15 dimensions. On the other hand, WD obtained $90.02\%$ and $90.05\%$ of accuracy for COIF and DB wavelet families respectively; in both case, the best results were obtained using 2 decomposition levels. Table \ref{tab:tab2} shows the per class accuracy for the best results of PCA, FD and WD. Most of the classes were better discriminate using WD, with COIF wavelet family and 2 decomposition levels. This configuration improved up to $5.7\%$ per class accuracy obtained by PCA (e.g. class H -\textit{Med-al Muscovite}) and up to $4.3\%$ accuracy obtained using the original image (e.g. class D -\textit{Kaolinite pxl}). However, class H (\textit{Med-al Muscovite}) was the only one with a worse per class accuracy using any of the tested DR approaches in comparison with the original image classification. 
+
+\begin{table}[]
+\centering
+\caption{Overall classification accuracies ($\%$) for Cuprite: Original image (OI), PCA, Fourier shape descriptors (FD) and Wavelet shape descriptors (WD)}
+\label{tab:tab2}
+\begin{tabular}{cccccccc}
+\hline
+\multicolumn{7}{r}{\cellcolor[HTML]{EFEFEF}\textbf{OI (\%)}}                                                                                                                                                                                & 89.31                                   \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{$d$} & \textbf{PCA(\%)} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}\textbf{FD(\%)}} & \multicolumn{5}{c}{\cellcolor[HTML]{EFEFEF}\textbf{WD}}                                                                                                                                            \\ \hline
+5          & 79.57            & \multicolumn{1}{c|}{75.15}                                   & \cellcolor[HTML]{EFEFEF}\textbf{$l$} & \cellcolor[HTML]{EFEFEF}\textbf{$d$} & \cellcolor[HTML]{EFEFEF}\textbf{COIF(\%)} & \cellcolor[HTML]{EFEFEF}\textbf{$d$} & \cellcolor[HTML]{EFEFEF}\textbf{DB(\%)} \\ \cline{4-8} 
+10         & 85.41            & \multicolumn{1}{c|}{84.97}                                   & 1                                  & 71                                 & 89.39                                     & 100                                & 89.66                                   \\
+15         & \textbf{87.83}   & \multicolumn{1}{c|}{\textbf{86.73}}                          & 2                                  & 38                                 & \textbf{90.02}                            & 50                                 & \textbf{90.05}                          \\
+20         & \textbf{87.83}   & \multicolumn{1}{c|}{\textbf{86.73}}                          & 3                                  & 21                                 & 86.70                                     & 25                                 & 87.74                                   \\ \cline{4-8} 
+25         & 86.18            & \multicolumn{1}{c|}{86.57}                                   &                                    &                                    &                                           &                                    &                                         \\
+30         & 86.83            & \multicolumn{1}{c|}{85.93}                                   &                                    &                                    &                                           &                                    &                                         \\
+35         & 86.43            & \multicolumn{1}{c|}{85.96}                                   &                                    &                                    &                                           &                                    &                                         \\
+40         & 85.20            & \multicolumn{1}{c|}{85.48}                                   &                                    &                                    &                                           &                                    &                                         \\
+45         & 84.12            & \multicolumn{1}{c|}{85.33}                                   &                                    &                                    &                                           &                                    &                                         \\
+50         & 83.17            & \multicolumn{1}{c|}{85.37}                                   &                                    &                                    &                                           &                                    &                                         \\ \cline{1-3}
+\end{tabular}
+\end{table}
+
+\begin{table}[]
+\centering
+\caption{Per class accuracy for Cuprite: Original image (OI); PCA $d=15$; Fourier shape descriptors (FD) $d=15$; and wavelet shape descriptors (WD) COIF $l=2$ and DB $l=2$}
+\label{ab:tab2b}
+\begin{tabular}{cccccc}
+\cline{5-6}
+\multicolumn{1}{l}{\textbf{}}                              & \multicolumn{1}{l}{\textbf{}}         & \multicolumn{1}{l}{\textbf{}}         & \multicolumn{1}{l}{\textbf{}} & \multicolumn{2}{c}{\cellcolor[HTML]{EFEFEF}\textbf{WD}}                       \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{EFEFEF}\textbf{Class}} & \textbf{IO  (\%)}                     & \textbf{PCA (\%)}                     & \textbf{FD (\%)}              & \textbf{COIF (\%)}                    & \textbf{DB(\%)}                       \\
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{EFEFEF}\textbf{}}      & \textbf{}                             & \textbf{$d=15$}                         & \textbf{$d=15$}                 & \textbf{$l=2$}                          & \textbf{$l=2$}                          \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\textbf{A}                                                 & 91.8                                  & 89.9                                  & 90.9                          & 94.5                                  & \cellcolor[HTML]{EFEFEF}\textbf{94.8} \\
+\rowcolor[HTML]{FFFFFF} 
+\textbf{B}                                                 & 91.8                                  & 90.8                                  & 90.5                          & \cellcolor[HTML]{EFEFEF}\textbf{92.6} & 92.2                                  \\
+\rowcolor[HTML]{FFFFFF} 
+\textbf{C}                                                 & 65.3                                  & 63.1                                  & 58.9                          & \cellcolor[HTML]{EFEFEF}\textbf{67.4} & 66.1                                  \\
+\rowcolor[HTML]{FFFFFF} 
+\textbf{D}                                                 & 88.0                                  & 90.4                                  & 89.3                          & \cellcolor[HTML]{EFEFEF}\textbf{92.3} & 92.2                                  \\
+\rowcolor[HTML]{FFFFFF} 
+\textbf{E}                                                 & 82.2                                  & 77.4                                  & 76.7                          & \cellcolor[HTML]{EFEFEF}\textbf{82.5} & 82.3                                  \\
+\rowcolor[HTML]{FFFFFF} 
+\textbf{F}                                                 & 91.5                                  & \cellcolor[HTML]{EFEFEF}\textbf{96.8} & 94.2                          & 94.3                                  & 94.4                                  \\
+\rowcolor[HTML]{FFFFFF} 
+\textbf{G}                                                 & 90.5                                  & 90.9                                  & 91.4                          & \cellcolor[HTML]{EFEFEF}\textbf{93.0} & 92.8                                  \\
+\rowcolor[HTML]{FFFFFF} 
+\textbf{H}                                                 & \cellcolor[HTML]{EFEFEF}\textbf{72.5} & 53.5                                  & 40.0                          & 59.2                                  & 61.7                                  \\
+\rowcolor[HTML]{FFFFFF} 
+\textbf{I}                                                 & 93.5                                  & 93.8                                  & 93.7                          & \cellcolor[HTML]{EFEFEF}\textbf{95.1} & \cellcolor[HTML]{EFEFEF}95.1          \\
+\rowcolor[HTML]{FFFFFF} 
+\textbf{J}                                                 & 99.0                                  & 98.8                                  & 98.3                          & 99.2                                  & \cellcolor[HTML]{EFEFEF}\textbf{99.3}  \\ \hline
+\end{tabular}
+\end{table}
+
+
+indian original 2 
+
+\begin{table}[]
+\centering
+\caption{Per class accuracy for Indian Pines: Original image (OI); PCA $d=10$; Fourier Shape Descriptors (FD) $d=10$; and Wavelet Shape Descriptors (WD) COIF $l=3$ and DB $l=3$.}
+\label{tab:tab1b}
+\begin{tabular}{|cccccc|}
+\cline{5-6}
+\multicolumn{1}{l}{\textbf{}}                              & \multicolumn{1}{l}{\textbf{}} & \multicolumn{1}{l}{\textbf{}}         & \multicolumn{1}{l}{\textbf{}}         & \multicolumn{2}{c}{\cellcolor[HTML]{EFEFEF}\textbf{WD}}                       \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{EFEFEF}\textbf{Class}} & \textbf{IO  (\%)}             & \textbf{PCA (\%)}                     & \textbf{FD (\%)}                      & \textbf{COIF (\%)}                    & \textbf{DB(\%)}                       \\
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{EFEFEF}\textbf{}}      & \textbf{}                     & \textbf{$d=10$}                         & \textbf{$d=10$}                         & \textbf{$l=3$}                          & \textbf{$l=3$}                          \\ \hline
+\textbf{A}                                                 & 44.4                          & 44.9                                  & \cellcolor[HTML]{EFEFEF}\textbf{46.9} & 38.8                                  & 42.9                                  \\
+\textbf{B}                                                 & 37.9                          & \cellcolor[HTML]{EFEFEF}\textbf{55.6} & 53.2                                  & 45.9                                  & 53.2                                  \\
+\textbf{C}                                                 & 50.0                          & 43.1                                  & 58.3                                  & 55.5                                  & \cellcolor[HTML]{EFEFEF}\textbf{67.3} \\
+\textbf{D}                                                 & 63.4                          & 65.6                                  & 75.4                                  & 70.2                                  & \cellcolor[HTML]{EFEFEF}\textbf{76.0} \\
+\textbf{E}                                                 & 67.2                          & 73.5                                  & 77.7                                  & 80.2                                  & \cellcolor[HTML]{EFEFEF}\textbf{83.2} \\
+\textbf{F}                                                 & 82.5                          & 85.7                                  & \cellcolor[HTML]{EFEFEF}\textbf{91.1} & 82.8                                  & 88.1                                  \\
+\textbf{G}                                                 & 53.8                          & 60.9                                  & 73.9                                  & 30.4                                  & 56.5                                  \\
+\textbf{H}                                                 & 91.8                          & 93.0                                  & \cellcolor[HTML]{EFEFEF}\textbf{93.5} & 91.8                                  & 92.6                                  \\
+\textbf{I}                                                 & 98.8                          & 97.7                                  & 98.6                                  & \cellcolor[HTML]{EFEFEF}\textbf{99.1} & 98.9                                  \\
+\textbf{J}                                                 & 20.0                          & 38.9                                  & \cellcolor[HTML]{EFEFEF}\textbf{50.0} & 16.7                                  & 22.2                                  \\
+\textbf{K}                                                 & 51.0                          & 69.1                                  & 70.5                                  & 71.1                                  & \cellcolor[HTML]{EFEFEF}\textbf{78.0} \\
+\textbf{L}                                                 & 82.6                          & 79.8                                  & 86.8                                  & 82.8                                  & \cellcolor[HTML]{EFEFEF}\textbf{86.9} \\
+\textbf{M}                                                 & 66.3                          & 63.3                                  & 74.1                                  & 75.8                                  & \cellcolor[HTML]{EFEFEF}\textbf{78.0} \\
+\textbf{N}                                                 & 82.1                          & 90.6                                  & 89.4                                  & 90.6                                  & \cellcolor[HTML]{EFEFEF}\textbf{91.8} \\
+\textbf{O}                                                 & 98.6                          & 96.9                                  & \cellcolor[HTML]{EFEFEF}\textbf{99.0} & 95.3                                  & 98.4                                  \\
+\textbf{P}                                                 & 95.5                          & 87.9                                  & \cellcolor[HTML]{EFEFEF}\textbf{97.0} & 90.7                                  & 93.5                                  \\ \hline
+\end{tabular}
+\end{table}
+
+KSC original 2
+
+\begin{table}[]
+\centering
+\caption{Per class accuracy for KSC: Original image (OI); PCA $d=35$; Fourier shape descriptors (FD) $d=10$; and Wavelet shape descriptors (WD) COIF $l=2$ and DB $l=2$}
+\label{tab:tab3b}
+\begin{tabular}{cccccc}
+\cline{5-6}
+\multicolumn{1}{l}{\textbf{}}                              & \multicolumn{1}{l}{\textbf{}}         & \multicolumn{1}{l}{\textbf{}} & \multicolumn{1}{l}{\textbf{}}         & \multicolumn{2}{c}{\cellcolor[HTML]{EFEFEF}\textbf{WD}}                       \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{EFEFEF}\textbf{Class}} & \textbf{IO  (\%)}                     & \textbf{PCA (\%)}             & \textbf{FD (\%)}                      & \textbf{COIF (\%)}                    & \textbf{DB(\%)}                       \\
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{EFEFEF}\textbf{}}      & \textbf{}                             & \textbf{$d=35$}                 & \textbf{$d=10$}                         & \textbf{$l=2$}                          & \textbf{$l=2$}                          \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\textbf{A}                                                 & 93.0                                  & 82.5                          & 92.3                                  & \cellcolor[HTML]{EFEFEF}\textbf{95.3} & 93.9                                  \\
+\rowcolor[HTML]{FFFFFF} 
+\textbf{B}                                                 & \cellcolor[HTML]{EFEFEF}\textbf{83.5} & 61.2                          & 78.5                                  & 81.3                                  & 83.1                                  \\
+\rowcolor[HTML]{FFFFFF} 
+\textbf{C}                                                 & 90.2                                  & 49.1                          & 75.7                                  & \cellcolor[HTML]{EFEFEF}\textbf{91.7} & 90.9                                  \\
+\rowcolor[HTML]{FFFFFF} 
+\textbf{D}                                                 & \cellcolor[HTML]{EFEFEF}\textbf{73.0} & 32.6                          & 55.5                                  & 72.7                                  & 70.0                                  \\
+\rowcolor[HTML]{FFFFFF} 
+\textbf{E}                                                 & \cellcolor[HTML]{EFEFEF}\textbf{51.6} & 35.2                          & 44.8                                  & 47.6                                  & 48.3                                  \\
+\rowcolor[HTML]{FFFFFF} 
+\textbf{F}                                                 & 45.9                                  & 14.1                          & \cellcolor[HTML]{EFEFEF}\textbf{58.3} & 57.3                                  & 45.1                                  \\
+\rowcolor[HTML]{FFFFFF} 
+\textbf{G}                                                 & 64.8                                  & 42.5                          & 85.1                                  & 83.0                                  & \cellcolor[HTML]{EFEFEF}\textbf{88.3} \\
+\rowcolor[HTML]{FFFFFF} 
+\textbf{H}                                                 & 87.0                                  & 68.0                          & 71.4                                  & 85.8                                  & \cellcolor[HTML]{EFEFEF}\textbf{87.4} \\
+\rowcolor[HTML]{FFFFFF} 
+\textbf{I}                                                 & 98.3                                  & 87.6                          & 94.2                                  & 98.5                                  & \cellcolor[HTML]{EFEFEF}\textbf{99.1} \\
+\rowcolor[HTML]{FFFFFF} 
+\textbf{J}                                                 & 92.6                                  & 81.3                          & 62..9                                 & 90.1                                  & \cellcolor[HTML]{EFEFEF}\textbf{94.0} \\
+\rowcolor[HTML]{FFFFFF} 
+\textbf{K}                                                 & 95.7                                  & 95.2                          & 93.6                                  & \cellcolor[HTML]{EFEFEF}\textbf{96.8} & 96.6                                  \\
+\rowcolor[HTML]{FFFFFF} 
+\textbf{L}                                                 & 91.5                                  & 65.6                          & 75.1                                  & 93.4                                  & \cellcolor[HTML]{EFEFEF}\textbf{94.9} \\
+\rowcolor[HTML]{FFFFFF} 
+\textbf{M}                                                 & \cellcolor[HTML]{EFEFEF}\textbf{98.3} & 98.1                          & 97.6                                  & 98.0                                  & 98.2                                  \\ \hline
+\end{tabular}
+\end{table}

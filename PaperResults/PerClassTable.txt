@@ -1,0 +1,175 @@
+\begin{table}[]
+\centering
+\caption{Per class accuracy for Indian Pines: Original image (OI); PCA $d=10$; Fourier Shape Descriptors (FD) $d=10$; and Wavelet Shape Descriptors (WD) COIF $l=3$ and DB $l=3$.}
+\label{tab:tab1b}
+\begin{tabular}{|cccccccccc|}
+\cline{5-6}
+\multicolumn{1}{l}{\textbf{}}                              & \multicolumn{1}{l}{\textbf{}} & \multicolumn{1}{l}{\textbf{}}         & \multicolumn{1}{l}{\textbf{}}         & \multicolumn{2}{c}{\cellcolor[HTML]{EFEFEF}\textbf{WD}}                       \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{EFEFEF}\textbf{Class}} & \textbf{IO  (\%)}             & \textbf{PCA (\%)}                          & \textbf{FD (\%)}                      & \textbf{COIF (\%)}                    & \textbf{DB(\%)}                        & \textbf{FC(\%)}    & \textbf{BM(\%)}   & \textbf{SM(\%)}   & \textbf{SV(\%)}                    \\
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{EFEFEF}\textbf{}}      & \textbf{}                     & \textbf{$d=10$}                            & \textbf{$d=10$}                       & \textbf{$l=3$}                        & \textbf{$l=3$}                         & \textbf{$d=10$}    & \textbf{$d=10$}   & \textbf{$d=10$}   & \textbf{$d=10$}                         \\ \hline
+\textbf{A}                                                 & 44.4                          & 44.9                                       & \cellcolor[HTML]{EFEFEF}\textbf{46.9} & 38.8                                  & 42.9                                   & 46.34              & 00.00             & 73.17             & 78.04  \\
+\textbf{B}                                                 & 37.9                          & \cellcolor[HTML]{EFEFEF}\textbf{55.6}      & 53.2                                  & 45.9                                  & 53.2                                   & 58.28              & 53.92             & 54.31             & 49.64  \\
+\textbf{C}                                                 & 50.0                          & 43.1                                       & 58.3                                  & 55.5                                  & \cellcolor[HTML]{EFEFEF}\textbf{67.3}  & 01.20              & 00.13             & 08.29             & 16.19  \\
+\textbf{D}                                                 & 63.4                          & 65.6                                       & 75.4                                  & 70.2                                  & \cellcolor[HTML]{EFEFEF}\textbf{76.0}  & 07.51              & 00.00             & 31.92             & 30.98  \\
+\textbf{E}                                                 & 67.2                          & 73.5                                       & 77.7                                  & 80.2                                  & \cellcolor[HTML]{EFEFEF}\textbf{83.2}  & 82.29              & 40.91             & 80.22             & 74.71  \\
+\textbf{F}                                                 & 82.5                          & 85.7                                       & \cellcolor[HTML]{EFEFEF}\textbf{91.1} & 82.8                                  & 88.1                                   & 89.49              & 82.19             & 95.43             & 92.08  \\
+\textbf{G}                                                 & 53.8                          & 60.9                                       & 73.9                                  & 30.4                                  & 56.5                                   & 56.00              & 00.00             & 68.00             & 72.00  \\
+\textbf{H}                                                 & 91.8                          & 93.0                                       & \cellcolor[HTML]{EFEFEF}\textbf{93.5} & 91.8                                  & 92.6                                   & 98.13              & 96.51             & 96.04             & 89.30  \\
+\textbf{I}                                                 & 98.8                          & 97.7                                       & 98.6                                  & \cellcolor[HTML]{EFEFEF}\textbf{99.1} & 98.9                                   & 00.00              & 00.00             & 16.66             & 16.66  \\
+\textbf{J}                                                 & 20.0                          & 38.9                                       & \cellcolor[HTML]{EFEFEF}\textbf{50.0} & 16.7                                  & 22.2                                   & 05.48              & 00.00             & 34.51             & 19.88  \\
+\textbf{K}                                                 & 51.0                          & 69.1                                       & 70.5                                  & 71.1                                  & \cellcolor[HTML]{EFEFEF}\textbf{78.0}  & 89.86              & 90.13             & 76.96             & 80.04  \\
+\textbf{L}                                                 & 82.6                          & 79.8                                       & 86.8                                  & 82.8                                  & \cellcolor[HTML]{EFEFEF}\textbf{86.9}  & 09.73              & 08.05             & 17.41             & 19.10  \\
+\textbf{M}                                                 & 66.3                          & 63.3                                       & 74.1                                  & 75.8                                  & \cellcolor[HTML]{EFEFEF}\textbf{78.0}  & 97.83              & 82.16             & 90.81             & 93.51  \\
+\textbf{N}                                                 & 82.1                          & 90.6                                       & 89.4                                  & 90.6                                  & \cellcolor[HTML]{EFEFEF}\textbf{91.8}  & 93.85              & 94.20             & 95.43             & 94.55  \\
+\textbf{O}                                                 & 98.6                          & 96.9                                       & \cellcolor[HTML]{EFEFEF}\textbf{99.0} & 95.3                                  & 98.4                                   & 29.68              & 22.76             & 21.61             & 24.20  \\
+\textbf{P}                                                 & 95.5                          & 87.9                                       & \cellcolor[HTML]{EFEFEF}\textbf{97.0} & 90.7                                  & 93.5                                   & 88.09              & 88.09             & 85.71             & 95.23  \\ \hline
+\end{tabular}
+\end{table}
+
+
+FDPC_acc_10  class	 1  accuracy is: 	 0.46.34146341463415
+FDPC_acc_10  class	 2  accuracy is: 	 0.58.28793774319067
+FDPC_acc_10  class	 3  accuracy is: 	 0.01.2048192771084338
+FDPC_acc_10  class	 4  accuracy is: 	 0.07.511737089201878
+FDPC_acc_10  class	 5  accuracy is: 	 0.82.29885057471265
+FDPC_acc_10  class	 6  accuracy is: 	 0.89.49771689497716
+FDPC_acc_10  class	 7  accuracy is: 	 0.56.00
+FDPC_acc_10  class	 8  accuracy is: 	 0.98.13953488372092
+FDPC_acc_10  class	 9  accuracy is: 	 0.00.00
+FDPC_acc_10  class	 10  accuracy is: 	 0.05.4857142857142854
+FDPC_acc_10  class	 11  accuracy is: 	 0.89.86425339366516
+FDPC_acc_10  class	 12  accuracy is: 	 0.09.737827715355805
+FDPC_acc_10  class	 13  accuracy is: 	 0.97.83783783783784
+FDPC_acc_10  class	 14  accuracy is: 	 0.93.85425812115891
+FDPC_acc_10  class	 15  accuracy is: 	 0.29.68299711815562
+FDPC_acc_10  class	 16  accuracy is: 	 0.88.09523809523809
+simil_acc_10  class	 1  accuracy is: 	 0.73.17073170731707
+simil_acc_10  class	 2  accuracy is: 	 0.54.31906614785992
+simil_acc_10  class	 3  accuracy is: 	 0.08.299866131191433
+simil_acc_10  class	 4  accuracy is: 	 0.31.92488262910798
+simil_acc_10  class	 5  accuracy is: 	 0.80.22988505747126
+simil_acc_10  class	 6  accuracy is: 	 0.95.4337899543379
+simil_acc_10  class	 7  accuracy is: 	 0.68.00
+simil_acc_10  class	 8  accuracy is: 	 0.96.04651162790697
+simil_acc_10  class	 9  accuracy is: 	 0.16.666666666666666
+simil_acc_10  class	 10  accuracy is: 	 0.34.514285714285714
+simil_acc_10  class	 11  accuracy is: 	 0.76.96832579185521
+simil_acc_10  class	 12  accuracy is: 	 0.17.415730337078653
+simil_acc_10  class	 13  accuracy is: 	 0.90.81081081081082
+simil_acc_10  class	 14  accuracy is: 	 0.95.43459174714662
+simil_acc_10  class	 15  accuracy is: 	 0.21.613832853025935
+simil_acc_10  class	 16  accuracy is: 	 0.85.71428571428571
+svd_acc_10  class	 1  accuracy is: 	 0.78.04878048780488
+svd_acc_10  class	 2  accuracy is: 	 0.49.64980544747082
+svd_acc_10  class	 3  accuracy is: 	 0.16.198125836680052
+svd_acc_10  class	 4  accuracy is: 	 0.30.985915492957744
+svd_acc_10  class	 5  accuracy is: 	 0.74.71264367816092
+svd_acc_10  class	 6  accuracy is: 	 0.92.08523592085236
+svd_acc_10  class	 7  accuracy is: 	 0.72.00
+svd_acc_10  class	 8  accuracy is: 	 0.89.30232558139535
+svd_acc_10  class	 9  accuracy is: 	 0.16.666666666666666
+svd_acc_10  class	 10  accuracy is: 	 0.19.885714285714284
+svd_acc_10  class	 11  accuracy is: 	 0.80.04524886877828
+svd_acc_10  class	 12  accuracy is: 	 0.19.101123595505617
+svd_acc_10  class	 13  accuracy is: 	 0.93.51351351351351
+svd_acc_10  class	 14  accuracy is: 	 0.94.55662862159789
+svd_acc_10  class	 15  accuracy is: 	 0.24.20749279538905
+svd_acc_10  class	 16  accuracy is: 	 0.95.23809523809523
+bombs_acc_10  class	 1  accuracy is: 	 0.00.00
+bombs_acc_10  class	 2  accuracy is: 	 0.53.92996108949416
+bombs_acc_10  class	 3  accuracy is: 	 0.00.13386880856760374
+bombs_acc_10  class	 4  accuracy is: 	 0.00.00
+bombs_acc_10  class	 5  accuracy is: 	 0.40.91954022988506
+bombs_acc_10  class	 6  accuracy is: 	 0.82.1917808219178
+bombs_acc_10  class	 7  accuracy is: 	 0.00.00
+bombs_acc_10  class	 8  accuracy is: 	 0.96.51162790697675
+bombs_acc_10  class	 9  accuracy is: 	 0.00.00
+bombs_acc_10  class	 10  accuracy is: 	 0.00.00
+bombs_acc_10  class	 11  accuracy is: 	 0.90.13574660633484
+bombs_acc_10  class	 12  accuracy is: 	 0.08.052434456928839
+bombs_acc_10  class	 13  accuracy is: 	 0.82.16216216216217
+bombs_acc_10  class	 14  accuracy is: 	 0.94.20544337137841
+bombs_acc_10  class	 15  accuracy is: 	 0.22.76657060518732
+bombs_acc_10  class	 16  accuracy is: 	 0.88.09523809523809
+
+\begin{table}[]
+\centering
+\caption{Per class accuracy for KSC: Original image (OI); PCA $d=35$; Fourier shape descriptors (FD) $d=10$; and Wavelet shape descriptors (WD) COIF $l=2$ and DB $l=2$}
+\label{tab:tab3b}
+\begin{tabular}{|cccccccccc|}
+\cline{5-6}
+\multicolumn{1}{l}{\textbf{}}                              & \multicolumn{1}{l}{\textbf{}}         & \multicolumn{1}{l}{\textbf{}} & \multicolumn{1}{l}{\textbf{}}         & \multicolumn{2}{c}{\cellcolor[HTML]{EFEFEF}\textbf{WD}}                       \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{EFEFEF}\textbf{Class}} & \textbf{IO  (\%)}             & \textbf{PCA (\%)}                          & \textbf{FD (\%)}                      & \textbf{COIF (\%)}                    & \textbf{DB(\%)}                        & \textbf{FC(\%)}    & \textbf{BM(\%)}   & \textbf{SM(\%)}   & \textbf{SV(\%)}                    \\
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{l}{\cellcolor[HTML]{EFEFEF}\textbf{}}      & \textbf{}                             & \textbf{$d=10$}               & \textbf{$d=10$}                       & \textbf{$l=3$}                        & \textbf{$l=3$}                         & \textbf{$d=10$}    & \textbf{$d=10$}   & \textbf{$d=10$}   & \textbf{$d=10$}  \\ \hline
+\textbf{A}                                                 & 93.0                                  & 82.5                          & 92.3                                  & \cellcolor[HTML]{EFEFEF}\textbf{95.3} & 93.9                                   & 94.89              & 94.59             & 00.00             & 00.00\\
+\textbf{B}                                                 & \cellcolor[HTML]{EFEFEF}\textbf{83.5} & 61.2                          & 78.5                                  & 81.3                                  & 83.1                                   & 95.43              & 84.93             & 00.00             & 00.00\\
+\textbf{C}                                                 & 90.2                                  & 49.1                          & 75.7                                  & \cellcolor[HTML]{EFEFEF}\textbf{91.7} & 90.9                                   & 92.60              & 89.13             & 00.00             & 00.00\\
+\textbf{D}                                                 & \cellcolor[HTML]{EFEFEF}\textbf{73.0} & 32.6                          & 55.5                                  & 72.7                                  & 70.0                                   & 55.94              & 55.94             & 00.00             & 00.00\\
+\textbf{E}                                                 & \cellcolor[HTML]{EFEFEF}\textbf{51.6} & 35.2                          & 44.8                                  & 47.6                                  & 48.3                                   & 38.62              & 47.58             & 00.00             & 00.00\\
+\textbf{F}                                                 & 45.9                                  & 14.1                          & \cellcolor[HTML]{EFEFEF}\textbf{58.3} & 57.3                                  & 45.1                                   & 58.25              & 60.19             & 00.00             & 00.00\\
+\textbf{G}                                                 & 64.8                                  & 42.5                          & 85.1                                  & 83.0                                  & \cellcolor[HTML]{EFEFEF}\textbf{88.3}  & 58.51              & 89.36             & 00.00             & 00.00\\
+\textbf{H}                                                 & 87.0                                  & 68.0                          & 71.4                                  & 85.8                                  & \cellcolor[HTML]{EFEFEF}\textbf{87.4}  & 79.38              & 77.57             & 00.00             & 00.00\\
+\textbf{I}                                                 & 98.3                                  & 87.6                          & 94.2                                  & 98.5                                  & \cellcolor[HTML]{EFEFEF}\textbf{99.1}  & 89.10              & 91.66             & 00.00             & 00.00\\
+\textbf{J}                                                 & 92.6                                  & 81.3                          & 62..9                                 & 90.1                                  & \cellcolor[HTML]{EFEFEF}\textbf{94.0}  & 95.87              & 93.95             & 04.39             & 04.39\\
+\textbf{K}                                                 & 95.7                                  & 95.2                          & 93.6                                  & \cellcolor[HTML]{EFEFEF}\textbf{96.8} & 96.6                                   & 94.16              & 94.42             & 00.00             & 00.00\\
+\textbf{L}                                                 & 91.5                                  & 65.6                          & 75.1                                  & 93.4                                  & \cellcolor[HTML]{EFEFEF}\textbf{94.9}  & 91.16              & 93.81             & 00.88             & 01.10\\
+\textbf{M}                                                 & \cellcolor[HTML]{EFEFEF}\textbf{98.3} & 98.1                          & 97.6                                  & 98.0                                  & 98.2                                   & 99.88              & 99.88             & 97.84             & 97.84\\ \hline
+\end{tabular}
+\end{table}
+
+FDPC_acc_10  class	 1  accuracy is: 	 0.94.8905109489051
+FDPC_acc_10  class	 2  accuracy is: 	 0.95.4337899543379
+FDPC_acc_10  class	 3  accuracy is: 	 0.92.60869565217391
+FDPC_acc_10  class	 4  accuracy is: 	 0.55.94713656387665
+FDPC_acc_10  class	 5  accuracy is: 	 0.38.620689655172413
+FDPC_acc_10  class	 6  accuracy is: 	 0.58.25242718446602
+FDPC_acc_10  class	 7  accuracy is: 	 0.58.51063829787234
+FDPC_acc_10  class	 8  accuracy is: 	 0.79.38144329896907
+FDPC_acc_10  class	 9  accuracy is: 	 0.89.10256410256411
+FDPC_acc_10  class	 10  accuracy is: 	 0.95.87912087912088
+FDPC_acc_10  class	 11  accuracy is: 	 0.94.16445623342176
+FDPC_acc_10  class	 12  accuracy is: 	 0.91.16997792494481
+FDPC_acc_10  class	 13  accuracy is: 	 0.99.88009592326139
+simil_acc_10  class	 1  accuracy is: 	 0.00.00
+simil_acc_10  class	 2  accuracy is: 	 0.00.00
+simil_acc_10  class	 3  accuracy is: 	 0.00.00
+simil_acc_10  class	 4  accuracy is: 	 0.00.00
+simil_acc_10  class	 5  accuracy is: 	 0.00.00
+simil_acc_10  class	 6  accuracy is: 	 0.00.00
+simil_acc_10  class	 7  accuracy is: 	 0.00.00
+simil_acc_10  class	 8  accuracy is: 	 0.00.00
+simil_acc_10  class	 9  accuracy is: 	 0.00.00
+simil_acc_10  class	 10  accuracy is: 	 0.04.395604395604396
+simil_acc_10  class	 11  accuracy is: 	 0.00.00
+simil_acc_10  class	 12  accuracy is: 	 0.00.8830022075055188
+simil_acc_10  class	 13  accuracy is: 	 0.97.84172661870504
+svd_acc_10  class	 1  accuracy is: 	 0.00.00
+svd_acc_10  class	 2  accuracy is: 	 0.00.00
+svd_acc_10  class	 3  accuracy is: 	 0.00.00
+svd_acc_10  class	 4  accuracy is: 	 0.00.00
+svd_acc_10  class	 5  accuracy is: 	 0.00.00
+svd_acc_10  class	 6  accuracy is: 	 0.00.00
+svd_acc_10  class	 7  accuracy is: 	 0.00.00
+svd_acc_10  class	 8  accuracy is: 	 0.00.00
+svd_acc_10  class	 9  accuracy is: 	 0.00.00
+svd_acc_10  class	 10  accuracy is: 	 0.04.395604395604396
+svd_acc_10  class	 11  accuracy is: 	 0.00.00
+svd_acc_10  class	 12  accuracy is: 	 0.01.1037527593818985
+svd_acc_10  class	 13  accuracy is: 	 0.97.84172661870504
+bombs_acc_10  class	 1  accuracy is: 	 0.94.5985401459854
+bombs_acc_10  class	 2  accuracy is: 	 0.84.93150684931506
+bombs_acc_10  class	 3  accuracy is: 	 0.89.13043478260869
+bombs_acc_10  class	 4  accuracy is: 	 0.55.94713656387665
+bombs_acc_10  class	 5  accuracy is: 	 0.47.586206896551725
+bombs_acc_10  class	 6  accuracy is: 	 0.60.19417475728155
+bombs_acc_10  class	 7  accuracy is: 	 0.89.36170212765957
+bombs_acc_10  class	 8  accuracy is: 	 0.77.57731958762887
+bombs_acc_10  class	 9  accuracy is: 	 0.91.66666666666666
+bombs_acc_10  class	 10  accuracy is: 	 0.93.95604395604396
+bombs_acc_10  class	 11  accuracy is: 	 0.94.42970822281167
+bombs_acc_10  class	 12  accuracy is: 	 0.93.81898454746137
+bombs_acc_10  class	 13  accuracy is: 	 0.99.88009592326139
